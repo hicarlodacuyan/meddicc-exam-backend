@@ -27,7 +27,6 @@ SECRET_KEY = 'django-insecure-81bsv4=kx5x14mz5f%#^u62bucm=&tff_h+@r6sxdf72v!xr*%
 DEBUG = True
 
 ALLOWED_HOSTS = ['3.27.141.143', '127.0.0.1']
-# This is a test comment to check CI/CD
 
 # Application definition
 
