@@ -1,0 +1,42 @@
+# Byte-compiled / cached files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+venv/
+env/
+.env/
+*.env
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django-related
+db.sqlite3
+db.sqlite3-journal
+*.log
+media/
+staticfiles/
+static/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Docker-related files
+.env
+docker-compose.override.yml
+
+# Ignore Python dependencies
+*.egg-info/
+.eggs/
+dist/
+build/
