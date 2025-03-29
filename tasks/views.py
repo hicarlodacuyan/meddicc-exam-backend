@@ -4,6 +4,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .models import Task
 from .serializers import TaskSerializer
 from .filters import TaskFilter
+from .pagination import CustomPageNumberPagination
 
 class TaskViewSet(viewsets.ModelViewSet):
     queryset = Task.objects.all()
@@ -11,6 +12,7 @@ class TaskViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend]
     filterset_class = TaskFilter
+    pagination_class = CustomPageNumberPagination
  
     def get_queryset(self):
         return self.queryset.filter(user=self.request.user)
