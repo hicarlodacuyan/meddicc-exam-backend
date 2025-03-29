@@ -42,5 +42,5 @@ Ensure that you have the following installed on your local machine:
 
 6. **Access the API:**
 
-   Import the `Insomnia.json` file in the root directory of the project to your Insomnia app and start using the APIs  
-
+   Import the `Insomnia.json` file in the root directory of the project to your Insomnia app or visit http://localhost:8000/api/schema/swagger-ui/
+   
