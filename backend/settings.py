@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'users',
     'tasks',
-    'django_filters'
+    'django_filters',
+    'drf_spectacular',
 ]
 
 REST_FRAMEWORK = {
@@ -53,6 +54,14 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'PAGE_SIZE': 10,
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'MEDDICC exam API',
+    'DESCRIPTION': 'A simple tasks application for MEDDICC exam',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
 }
 
 SIMPLE_JWT = {
